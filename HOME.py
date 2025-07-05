@@ -161,7 +161,7 @@ with col4:
     st.markdown(
         """
         <div class="card">
-            <div class="card-title">Conceptos y Fórmulas empleados en las Calculadoras</div>
+            <div class="card-title">Conceptos y Fórmulas Empleadas</div>
             <a class="card-link" href="/TEORIA" target="_self">Explorar</a>
         </div>
         """,
