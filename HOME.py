@@ -161,6 +161,19 @@ with col4:
     st.markdown(
         """
         <div class="card">
+            <div class="card-title">Calculadora de Interes Compuesto</div>
+            <a class="card-link" href="/INTERES_COMPUESTO" target="_self">Ir a la calculadora</a>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Tercera fila de dos tarjetas
+col5, col6 = st.columns(2, gap="large") # Dos columnas para la tercera fila
+with col5:
+    st.markdown(
+        """
+        <div class="card">
             <div class="card-title">Conceptos y Fórmulas Empleadas</div>
             <a class="card-link" href="/TEORIA" target="_self">Explorar</a>
         </div>

@@ -114,8 +114,7 @@ st.divider()
 
 # --- Sección de Tasas de Interés ---
 st.header("3. Tasas de Interés")
-st.markdown("""
-Las tasas de interés son el precio del dinero en el tiempo. Representan el costo de pedir prestado dinero o la recompensa por prestarlo (o invertirlo). Entender los diferentes tipos de tasas es crucial en cualquier análisis financiero.
+st.markdown(""" Las tasas de interés son el precio del dinero en el tiempo. Representan el costo de pedir prestado dinero o la recompensa por prestarlo (o invertirlo). Entender los diferentes tipos de tasas es crucial en cualquier análisis financiero.
 
 ### 3.1 Tasa Nominal y Tasa Efectiva Anual (TEA)
 
@@ -194,7 +193,7 @@ Es fundamental comprender estas equivalencias para tomar decisiones financieras 
 st.divider()
 
 # Enlace para regresar a la página principal
-if st.button("Volver a Home"):
+if st.button("Volver a Herramientas Financieras"):
     st.switch_page("HOME.py")
 
 st.sidebar.info(

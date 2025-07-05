@@ -249,7 +249,7 @@ st.markdown("---")
 col_back1, col_back2, col_back3 = st.columns([1, 2, 1])
 
 with col_back2:
-    if st.button("Volver a Home", key="back_to_home_amort"):
+    if st.button("Volver a Herramientas Financieras", key="back_to_home_amort"):
         st.switch_page("HOME.py")
 
 # --- Información Adicional/Ayuda y Navegación (en la barra lateral) ---
