@@ -201,7 +201,7 @@ col_back1, col_back2, col_back3 = st.columns([1, 2, 1]) # Ajusta las proporcione
 
 with col_back2: # Colocamos el botón en la columna central
     if st.button("Volver a Home", key="back_to_home_tir", help="Regresar a la página principal de herramientas financieras."):
-        st.switch_page("Home.py")
+        st.switch_page("HOME.py")
 
 # --- Información Adicional/Ayuda y Navegación (en la barra lateral) ---
 st.sidebar.header("Acerca de esta Calculadora")

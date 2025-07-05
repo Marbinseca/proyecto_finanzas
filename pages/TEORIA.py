@@ -114,7 +114,7 @@ st.divider()
 
 # Enlace para regresar a la página principal
 if st.button("Volver a Home"):
-    st.switch_page("Home.py")
+    st.switch_page("HOME.py")
 
 st.sidebar.info(
     "Esta sección explica los conceptos fundamentales y las fórmulas detrás de las calculadoras financieras. "
