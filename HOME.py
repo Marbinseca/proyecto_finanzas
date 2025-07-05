@@ -48,7 +48,7 @@ st.markdown(
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         width: 100%;
         border: 1px solid #e0e0e0;
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; /* Mantener un margen inferior para separar las filas de tarjetas */
     }
     .card:hover {
         transform: translateY(-8px);
@@ -117,7 +117,9 @@ st.markdown("<p>Accede a nuestras calculadoras financieras especializadas para o
 st.markdown("<div class='divider-fancy'></div>", unsafe_allow_html=True)
 
 # --- Tarjetas de Herramientas ---
-col1, col2, col3 = st.columns(3, gap="large")
+
+# Primera fila de dos tarjetas
+col1, col2 = st.columns(2, gap="large") # Dos columnas para la primera fila
 
 with col1:
     st.markdown(
@@ -141,11 +143,25 @@ with col2:
         unsafe_allow_html=True
     )
 
+# Segunda fila de dos tarjetas
+col3, col4 = st.columns(2, gap="large") # Dos columnas para la segunda fila
+
 with col3:
     st.markdown(
         """
         <div class="card">
-            <div class="card-title">Conceptos y Fórmulas</div>
+            <div class="card-title">Calculadora de Tasas de Interes</div>
+            <a class="card-link" href="/TASAS" target="_self">Ir a la calculadora</a>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+with col4:
+    st.markdown(
+        """
+        <div class="card">
+            <div class="card-title">Conceptos y Fórmulas empleados en las Calculadoras</div>
             <a class="card-link" href="/TEORIA" target="_self">Explorar</a>
         </div>
         """,

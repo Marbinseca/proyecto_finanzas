@@ -3,7 +3,7 @@ import numpy_financial as npf
 
 st.set_page_config(page_title="Calculadora TIR y VAN", page_icon="images/finance.png", layout="centered")
 
-st.title("📊 Calculadora de TIR y VAN")
+st.title("💹 Calculadora de TIR y VAN")
 st.markdown("""
     Calcula la **Tasa Interna de Retorno (TIR)** y el **Valor Actual Neto (VAN)**
     para evaluar la viabilidad de tus proyectos de inversión.
@@ -201,7 +201,7 @@ col_back1, col_back2, col_back3 = st.columns([1, 2, 1]) # Ajusta las proporcione
 
 with col_back2: # Colocamos el botón en la columna central
     if st.button("Volver a Home", key="back_to_home_tir", help="Regresar a la página principal de herramientas financieras."):
-        st.switch_page("Home.py")
+        st.switch_page("HOME.py")
 
 # --- Información Adicional/Ayuda y Navegación (en la barra lateral) ---
 st.sidebar.header("Acerca de esta Calculadora")

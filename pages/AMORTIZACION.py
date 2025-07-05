@@ -5,7 +5,7 @@ from io import BytesIO
 
 st.set_page_config(page_title="Calculadora de Amortización", page_icon="images/finance.png", layout="centered")
 
-st.title("📊 Calculadora de Amortización")
+st.title("🗓️ Calculadora de Amortización")
 st.markdown("""
     Calcula tu tabla de amortización detallada para préstamos y descárgala en formato Excel.
 """)
@@ -250,7 +250,7 @@ col_back1, col_back2, col_back3 = st.columns([1, 2, 1])
 
 with col_back2:
     if st.button("Volver a Home", key="back_to_home_amort"):
-        st.switch_page("Home.py")
+        st.switch_page("HOME.py")
 
 # --- Información Adicional/Ayuda y Navegación (en la barra lateral) ---
 st.sidebar.header("Acerca de esta Calculadora")
