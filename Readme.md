@@ -69,6 +69,3 @@ Esto iniciará un servidor local y abrirá automáticamente una nueva pestaña e
 
 ## ▶️ Demo aplicación
 Puede ver una demo de la aplicación en el siguiente enlace: [Demo de la Aplicación](https://proyecto-finanzas.streamlit.app/)
-
-## 📄 Licencia
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
