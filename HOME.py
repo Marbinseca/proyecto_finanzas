@@ -109,6 +109,25 @@ st.sidebar.image("images/finance.png", use_container_width=True)
 st.sidebar.markdown("<h3 style='text-align: center; color: #4a69bd;'>Herramientas Pro</h3>", unsafe_allow_html=True)
 st.sidebar.markdown("---") # Un separador sutil
 
+# --- Enlaces de Navegación en el Sidebar (Organizados por Orden Deseado) ---
+st.sidebar.page_link("Home.py", label="Inicio", icon="🏠") # Enlace a la página principal
+
+# 1. Calculadoras
+st.sidebar.markdown("#### Calculadoras") # Subtítulo para agrupar
+st.sidebar.page_link("pages/tir.py", label="Calculadora TIR y VAN", icon="📈")
+st.sidebar.page_link("pages/amortizacion.py", label="Calculadora de Amortización", icon="🗓️")
+st.sidebar.page_link("pages/tasas.py", label="Calculadora de Tasas de Interés", icon="📈")
+st.sidebar.page_link("pages/interes_compuesto.py", label="Calculadora Interés Compuesto", icon="🌱")
+
+# 2. Teoría
+st.sidebar.markdown("#### Aprende") # Otro subtítulo
+st.sidebar.page_link("pages/teoria.py", label="Conceptos y Fórmulas", icon="📚")
+
+# 3. Acerca de / Contacto
+st.sidebar.markdown("#### Info") # Y otro subtítulo
+st.sidebar.page_link("pages/acerca_de.py", label="Acerca de / Contacto", icon="ℹ️")
+
+
 # --- Contenido Principal ---
 st.markdown("<h1 class='animate__animated animate__fadeInDown'>Herramientas Financieras</h1>", unsafe_allow_html=True)
 st.markdown("<p>Accede a nuestras calculadoras financieras especializadas para optimizar tus decisiones.</p>", unsafe_allow_html=True)
@@ -116,10 +135,10 @@ st.markdown("<p>Accede a nuestras calculadoras financieras especializadas para o
 # Separador decorativo
 st.markdown("<div class='divider-fancy'></div>", unsafe_allow_html=True)
 
-# --- Tarjetas de Herramientas ---
+# --- Tarjetas de Herramientas (Organizadas 2 filas de 3 tarjetas) ---
 
-# Primera fila de dos tarjetas
-col1, col2 = st.columns(2, gap="large") # Dos columnas para la primera fila
+# Primera fila de tres tarjetas
+col1, col2, col3 = st.columns(3, gap="large") # Ahora 3 columnas
 
 with col1:
     st.markdown(
@@ -143,39 +162,48 @@ with col2:
         unsafe_allow_html=True
     )
 
-# Segunda fila de dos tarjetas
-col3, col4 = st.columns(2, gap="large") # Dos columnas para la segunda fila
-
 with col3:
     st.markdown(
         """
         <div class="card">
-            <div class="card-title">Calculadora de Tasas de Interes</div>
+            <div class="card-title">Tasas de Interes</div>
             <a class="card-link" href="/TASAS" target="_self">Ir a la calculadora</a>
         </div>
         """,
         unsafe_allow_html=True
     )
 
+# Segunda fila de tres tarjetas
+col4, col5, col6 = st.columns(3, gap="large") # Otras 3 columnas
+
 with col4:
     st.markdown(
         """
         <div class="card">
-            <div class="card-title">Calculadora de Interes Compuesto</div>
-            <a class="card-link" href="/INTERES_COMPUESTO" target="_self">Ir a la calculadora</a>
+            <div class="card-title">Interés Compuesto</div>
+            <a class="card-link" href="/INTERES_COMPUESTO" target="_self">Proyectar Inversión</a>
         </div>
         """,
         unsafe_allow_html=True
     )
 
-# Tercera fila de dos tarjetas
-col5, col6 = st.columns(2, gap="large") # Dos columnas para la tercera fila
 with col5:
     st.markdown(
         """
         <div class="card">
-            <div class="card-title">Conceptos y Fórmulas Empleadas</div>
+            <div class="card-title">Conceptos y Fórmulas</div>
             <a class="card-link" href="/TEORIA" target="_self">Explorar</a>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+with col6:
+    st.markdown(
+        """
+        <div class="card">
+            <div class="card-title">Acerca de / Contacto</div>
+            <a class="card-link" href="/ACERCA_DE" target="_self">Conocer más</a>
         </div>
         """,
         unsafe_allow_html=True
