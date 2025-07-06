@@ -114,18 +114,18 @@ st.sidebar.page_link("HOME.py", label="Inicio") # Enlace a la página principal
 
 # 1. Calculadoras
 st.sidebar.markdown("#### Calculadoras") # Subtítulo para agrupar
-st.sidebar.page_link("pages/tir.py", label="Calculadora TIR y VAN")
-st.sidebar.page_link("pages/amortizacion.py", label="Calculadora de Amortización")
-st.sidebar.page_link("pages/tasas.py", label="Calculadora de Tasas de Interés")
-st.sidebar.page_link("pages/interes_compuesto.py", label="Calculadora Interés Compuesto")
+st.sidebar.page_link("pages/TIR.py", label="Calculadora TIR y VAN")
+st.sidebar.page_link("pages/AMORTIZACION.py", label="Calculadora de Amortización")
+st.sidebar.page_link("pages/TASAS.py", label="Calculadora de Tasas de Interés")
+st.sidebar.page_link("pages/INTERES_COMPUESTO.py", label="Calculadora Interés Compuesto")
 
 # 2. Teoría
 st.sidebar.markdown("#### Aprende") # Otro subtítulo
-st.sidebar.page_link("pages/teoria.py", label="Conceptos y Fórmulas")
+st.sidebar.page_link("pages/TEORIA.py", label="Conceptos y Fórmulas")
 
 # 3. Acerca de / Contacto
 st.sidebar.markdown("#### Info") # Y otro subtítulo
-st.sidebar.page_link("pages/acerca_de.py", label="Acerca de / Contacto")
+st.sidebar.page_link("pages/ACERCA_DE.py", label="Acerca de / Contacto")
 
 
 # --- Contenido Principal ---
