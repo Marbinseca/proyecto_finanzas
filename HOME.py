@@ -166,7 +166,7 @@ with col3:
     st.markdown(
         """
         <div class="card">
-            <div class="card-title">Tasas de Interes</div>
+            <div class="card-title">Calculadora Tasas de Interes</div>
             <a class="card-link" href="/TASAS" target="_self">Ir a la calculadora</a>
         </div>
         """,
