@@ -110,22 +110,22 @@ st.sidebar.markdown("<h3 style='text-align: center; color: #4a69bd;'>Herramienta
 st.sidebar.markdown("---") # Un separador sutil
 
 # --- Enlaces de Navegación en el Sidebar (Organizados por Orden Deseado) ---
-st.sidebar.page_link("Home.py", label="Inicio", icon="🏠") # Enlace a la página principal
+st.sidebar.page_link("Home.py", label="Inicio") # Enlace a la página principal
 
 # 1. Calculadoras
 st.sidebar.markdown("#### Calculadoras") # Subtítulo para agrupar
-st.sidebar.page_link("pages/tir.py", label="Calculadora TIR y VAN", icon="📈")
-st.sidebar.page_link("pages/amortizacion.py", label="Calculadora de Amortización", icon="🗓️")
-st.sidebar.page_link("pages/tasas.py", label="Calculadora de Tasas de Interés", icon="📈")
-st.sidebar.page_link("pages/interes_compuesto.py", label="Calculadora Interés Compuesto", icon="🌱")
+st.sidebar.page_link("pages/tir.py", label="Calculadora TIR y VAN")
+st.sidebar.page_link("pages/amortizacion.py", label="Calculadora de Amortización")
+st.sidebar.page_link("pages/tasas.py", label="Calculadora de Tasas de Interés")
+st.sidebar.page_link("pages/interes_compuesto.py", label="Calculadora Interés Compuesto")
 
 # 2. Teoría
 st.sidebar.markdown("#### Aprende") # Otro subtítulo
-st.sidebar.page_link("pages/teoria.py", label="Conceptos y Fórmulas", icon="📚")
+st.sidebar.page_link("pages/teoria.py", label="Conceptos y Fórmulas")
 
 # 3. Acerca de / Contacto
 st.sidebar.markdown("#### Info") # Y otro subtítulo
-st.sidebar.page_link("pages/acerca_de.py", label="Acerca de / Contacto", icon="ℹ️")
+st.sidebar.page_link("pages/acerca_de.py", label="Acerca de / Contacto")
 
 
 # --- Contenido Principal ---
