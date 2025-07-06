@@ -110,7 +110,7 @@ st.sidebar.markdown("<h3 style='text-align: center; color: #4a69bd;'>Herramienta
 st.sidebar.markdown("---") # Un separador sutil
 
 # --- Enlaces de Navegación en el Sidebar (Organizados por Orden Deseado) ---
-st.sidebar.page_link("Home.py", label="Inicio") # Enlace a la página principal
+st.sidebar.page_link("HOME.py", label="Inicio") # Enlace a la página principal
 
 # 1. Calculadoras
 st.sidebar.markdown("#### Calculadoras") # Subtítulo para agrupar
